@@ -1,0 +1,75 @@
+/*
+    UW Digital Colour Palette
+    https://uwaterloo.ca/brand-guidelines/visual-identity/digital-colour-palette
+*/
+
+/* Accent */
+#school > .section-accent
+    { background-color: #E0249A; }
+
+/* School Logo */
+#school > .section-contents > .school-logo
+{
+    position: absolute;
+        top: 35px;
+        left: 310px;
+        z-index: 1;
+    display: block;
+        width: 130px;
+        height: auto;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* School Map */
+#school-map
+{
+    position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+    display: block;
+        width: 375px;
+        height: 100%;
+}
+
+/* Titles */
+#school > .section-contents > h3, #school > .section-contents > span
+{
+    position: absolute;
+        left: 460px;
+    margin: 0px;
+}
+
+#school > .section-contents > h3
+{
+    top: 50px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#school > .section-contents > span
+{
+    top: 85px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Classes */
+#school > .section-contents > h4
+{
+    position: absolute;
+        top: 210px;
+        left: 460px;
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 400;
+}
+
+#school > .section-contents > ul
+{
+    position: absolute;
+        top: 220px;
+        left: 460px;
+    font-size: 13pt;
+}

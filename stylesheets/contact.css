@@ -1,0 +1,66 @@
+/* Info Card */
+#contact > .section-contents
+{
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    height: 450px;
+    max-width: 565px;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 2;
+}
+
+/* Accent */
+#contact > .section-accent
+{
+    width: 5px;
+    height: 470px;
+    background-color: orange;
+}
+
+/* Contact Info */
+#contact > a
+{
+    position: absolute;
+        top: 35px;
+        right: 0px;
+    display: block;
+        width: 295px;
+        height: 90px;
+    background-color: #E6DED7;
+    text-align: left;
+}
+
+#contact > a, #contact > a:visited > #contact > a:hover, #contact > a:active
+{
+    color: black;
+    text-decoration: none;
+}
+
+    /* Actual Contact Info */
+    #contact > a > .contact-info
+    {
+        position: absolute;
+            top: 0px;
+            left: 5px;
+        display: block;
+            width: 295px;
+            height: inherit;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    #contact > a > .contact-info > span
+        { display: block; }
+
+    /* Contact Info Accents */
+    #contact > a > .accent
+    {
+        position: absolute;
+            top: 0px;
+            left: 0px;
+        display: block;
+            width: 5px;
+            height: 100%;
+    }

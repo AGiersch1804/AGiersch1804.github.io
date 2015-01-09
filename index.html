@@ -1,87 +1,142 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Adam Gierscher by AGiersch1804</title>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Adam Gierscher</title>
+    <!-- Styles -->
+        <!-- Overall Page -->
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/header.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/cards.css" type="text/css" />
+        <!-- Card Specific -->
+    <link rel="stylesheet" href="stylesheets/me.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/school.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/metric-wire.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/contact.css" type="text/css" />
+    <!-- Script -->
+    <script src="javascripts/main.js" type="text/javascript"></script>
+</head>
+<body onload="Layout()" onresize="Layout()">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
+<!-- Header -->
+<div class="header">
+    <!-- Navbar -->
+    <div class="nav">
+        <!-- Title -->
         <h1>Adam Gierscher</h1>
-        <p></p>
-
-
-        <p class="view"><a href="https://github.com/AGiersch1804">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h1>
-<a name="under-construction" class="anchor" href="#under-construction"><span class="octicon octicon-link"></span></a>Under Construction</h1>
-
-<p>Hi whomever is viewing this page.  Currently I am in the process of making a nice pretty completely made by me HTML 5 webpage, but until then this will have to do.  So please bear with me.</p>
-
-<h2>
-<a name="about-me" class="anchor" href="#about-me"><span class="octicon octicon-link"></span></a>About Me</h2>
-
-<p>I am a University of Waterloo student studying computer programming.  Ever since I started programming in grade nine I was hooked.  Something about being able to see a creation of mine come to life and do what I want I just find amazing.</p>
-
-<h2>
-<a name="education" class="anchor" href="#education"><span class="octicon octicon-link"></span></a>Education</h2>
-
-<p>I am enrolled at the University of Waterloo in Honours Mathematics, but will be switching to Computer Science soon.  I chose this path, because for the first 1.5 years they are identical courses, but math is half the price.  So I was always in it for the computers.  As part of my education thus far I have taken and completed Algebra, Linear Algebra, Calculus (parts one and two), and Computer Science (parts one and two).  I have also taken as electives both Microeconomics and Macroeconomics, Physics, and German.</p>
-
-<h2>
-<a name="computer-programming-skills" class="anchor" href="#computer-programming-skills"><span class="octicon octicon-link"></span></a>Computer Programming Skills</h2>
-
-<ul>
-<li>Web Development
-
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JS</li>
-</ul>
-</li>
-<li>Server Side
-
-<ul>
-<li>PHP</li>
-</ul>
-</li>
-<li>Scripting
-
-<ul>
-<li>Python 2.7</li>
-</ul>
-</li>
-<li>Native Code
-
-<ul>
-<li>C</li>
-<li>C++ -&gt; I am in the process of learning this right now</li>
-</ul>
-</li>
-</ul><h2>
-<a name="contact-me" class="anchor" href="#contact-me"><span class="octicon octicon-link"></span></a>Contact Me</h2>
-
-<p>I know this site is pretty bare bones, but like I said a nice new one is on its way.  Until then I am available to answer any of your questions.  You can use any of the links below to contact me.</p>
-
-<p>Email: [<a href="mailto:A.Gierscher@Live.ca">A.Gierscher@Live.ca</a>][mailto://a.gierscher@live.ca]
-LinkedIn: [Adam Gierscher][<a href="http://ca.linkedin.com/pub/adam-gierscher/77/6b5/53a?trk=shareTw">http://ca.linkedin.com/pub/adam-gierscher/77/6b5/53a?trk=shareTw</a>]</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+        <!-- Navigation -->
+        <div>Resume</div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!-- Accent -->
+    <div class="nav-accent"></div>
+</div>
+
+<!-- About Me -->
+<div class="section" id="about-me">
+    <h2>About Me</h2>
+    <div class="section-contents">
+        <img src="images/me.jpg" alt="Adam Gierscher" title="Adam Gierscher" />
+        <div>
+            <p>"What really matters is what you create.  Does it work or not?  Does it make you proud?"</p>
+            <span>Richard Branson</span>
+        </div>
+        <p>
+            Hi I'm Adam.
+            <br />
+            <br />I'm a mathematics student at the University of Waterloo located in Ontario, Canada.
+              I have a strong passion for web development, because I can create marvels of all kinds with it.
+              I'd love to learn about operating systems and application environments, and would like to build my own (very basic) desktop environment one day
+        </p>
+    </div>
+    <!-- Accent -->
+    <div class="section-accent"></div>
+</div>
     
-  </body>
+<!-- Education -->
+<div class="section" id="school">
+    <h2>Education</h2>
+    <div class="section-contents">
+        <!-- School Logo -->
+        <img src="images/uw.gif" alt="University of Waterloo" title="University of Waterloo" class="school-logo" />
+        <!-- Map -->
+        <img src="http://image.maps.cit.api.here.com/mia/1.6/mapview?app_id=9QK7ay0NdHedbVVftv6q&app_code=1gyI_vhCNuWo7ku1SnS7jQ&c=43.468889,-80.54&z=7&w=375&h=465" alt="University of Waterloo" title="University of Waterloo" id="school-map" />
+        <!-- Information -->
+        <h3>University of Waterloo</h3>
+        <span>
+            Co-registered with St. Jerome's University
+            <br />Major: Mathematics
+        </span>
+        <!-- Classes -->
+        <h4>Classes</h4>
+        <ul>
+            <li>Algebra</li>
+            <li>Calculus (parts 1 and 2)</li>
+            <li>Designing Functional Programs</li>
+            <li>Elementary Algorithm Design and Data Abstraction</li>
+            <li>Linear Algebra (parts 1 and 2)</li>
+            <li>Logic and Computation</li>
+            <li>Object-Oriented Software Development</li>
+        </ul>
+    </div>
+    <!-- Accent -->
+    <div class="section-accent"></div>
+</div>
+    
+<!-- MetricWire -->
+<div class="section" id="metric-wire">
+    <h2>Work Experience</h2>
+    <div class="section-contents">
+        <!-- Banner -->
+        <div>
+            <img src="images/MetricWire.png" alt="MetricWire" title="MetricWire" />
+            <span class="job-title">Coop: Web Developer</span>
+            <span class="job-dates">Jan 2015 - April 2015</span>
+        </div>
+        <!-- Job Details -->
+        <p>Worked with GIT, BASH, Angular.JS, Node.JS, and MongoDB to develop the web side of the MetricWire research tools.  More information coming as the term progresses.</p>
+    </div>
+    <!-- Accent -->
+    <div class="section-accent"></div>
+</div>
+    
+<!-- Contact Me -->
+<div class="section" id="contact">
+    <h2>Contact Me</h2>
+    
+    <!-- Contents -->
+    <div class="section-contents">
+        Wanna learn more about me?
+        <br />Like my projects?
+        <br />You can contact me using one of the links on the side.
+    </div>
+
+    <!-- Accent -->
+    <div class="section-accent"></div>
+
+    <!-- Contact Links -->
+    <a href="mailto:a.gierscher@live.ca" target="_blank">
+        <div class="contact-info">
+            <span>Email:</span>
+            <span>A.Gierscher@Live.ca</span>
+        </div>
+        <div class="accent" style="background-color: #4cff00; "></div>
+    </a>
+    
+    <a href="http://bit.ly/AGiersch" target="_blank" style="top: 140px; ">
+        <div class="contact-info">
+            <span>LinkedIn:</span>
+            <span>Adam Gierscher</span>
+        </div>
+        <div class="accent" style="background-color: rgba(0, 102, 152, 1); "></div>
+    </a>
+    
+    <a href="http://bit.ly/AGCodes" style="top: 245px; ">
+        <div class="contact-info">
+            <span>Github:</span>
+            <span>AGiersch1804</span>
+        </div>
+        <div class="accent" style="background-color: black; "></div>
+    </a>
+</div>
+    
+</body>
 </html>

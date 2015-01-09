@@ -1,0 +1,11 @@
+body
+{
+    display: block;
+    font-family: "segoe ui", "arial", "noto sans", "ubuntu light", sans-serif;
+    font-weight: 100;
+    background-color: silver;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding: 50px 0px 25px 0px;
+    text-align: center;
+}

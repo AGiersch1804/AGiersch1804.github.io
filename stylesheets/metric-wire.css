@@ -1,0 +1,41 @@
+/* Accent */
+#metric-wire > .section-accent
+    { background: linear-gradient(to right, rgba(131, 79, 155, 1), rgba(124, 204, 204, 1)); }
+
+/* Banner */
+#metric-wire > .section-contents > div
+{
+    padding-top: 10px;
+    padding-bottom: 45px;
+    background-color: black;
+    color: white;
+}
+
+/* Image */
+#metric-wire > .section-contents > div > img
+{
+    display: block;
+    margin-left: 15px;
+}
+
+/* Text */
+#metric-wire > .section-contents > div > span
+{
+    font-size: 25px;
+    margin: 5px;
+}
+
+#metric-wire > .section-contents > div > .job-title
+    { float: left; }
+
+#metric-wire > .section-contents > div > .job-dates
+    { float: right; }
+
+/* Job Details */
+#metric-wire > .section-contents >  p
+{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
