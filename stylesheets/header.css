@@ -33,7 +33,7 @@
     }
 
     /* Tabs */
-    .header > .nav > div
+    .header > .nav div
     {
         display: inline-block;
             width: 120px;
@@ -43,6 +43,7 @@
         text-align: center;
         line-height: 2.5;
         background-color: #3385FF;
+        color: white;
     }
 
 /* Accent */
