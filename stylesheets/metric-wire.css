@@ -3,7 +3,7 @@
     { background: linear-gradient(to right, rgba(131, 79, 155, 1), rgba(124, 204, 204, 1)); }
 
 /* Banner */
-#metric-wire > .section-contents > div
+#metric-wire > .section-contents > .banner
 {
     padding-top: 10px;
     padding-bottom: 45px;
@@ -12,23 +12,23 @@
 }
 
 /* Image */
-#metric-wire > .section-contents > div > img
+#metric-wire > .section-contents > .banner > img
 {
     display: block;
     margin-left: 15px;
 }
 
 /* Text */
-#metric-wire > .section-contents > div > span
+#metric-wire > .section-contents > .banner > span
 {
     font-size: 25px;
     margin: 5px;
 }
 
-#metric-wire > .section-contents > div > .job-title
+#metric-wire > .section-contents > .banner > .job-title
     { float: left; }
 
-#metric-wire > .section-contents > div > .job-dates
+#metric-wire > .section-contents > .banner > .job-dates
     { float: right; }
 
 /* Job Details */
@@ -38,4 +38,20 @@
     text-align: center;
     font-size: 20px;
     font-weight: 400;
+}
+
+/* Badges */
+#metric-wire .badge-collection
+{
+    display: inline-block;
+        width: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+#metric-wire .badge-collection > img
+{
+    display: inline-block;
+        width: 90px;
+        margin: 5px;
 }
