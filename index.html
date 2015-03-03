@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="stylesheets/metric-wire.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/contact.css" type="text/css" />
     <!-- Script -->
+    <script src="javascripts/parse.js" type="text/javascript"></script>
+    <script src="javascripts/stats.js" type="text/javascript"></script>
     <script src="javascripts/main.js" type="text/javascript"></script>
 </head>
-<body onload="Layout()" onresize="Layout()">
+<body onload="Layout(); stats.sendStats()" onresize="Layout()">
 
 <!-- Header -->
 <div class="header">
@@ -42,9 +44,10 @@
         <p>
             Hi I'm Adam.
             <br />
-            <br />I'm a mathematics student at the University of Waterloo located in Ontario, Canada.
+            <br />
+            I'm a mathematics student at the University of Waterloo located in Ontario, Canada.
               I have a strong passion for web development, because I can create marvels of all kinds with it.
-              I'd love to learn about operating systems and application environments, and would like to build my own (very basic) desktop environment one day
+              I'd love to learn about operating systems and application environments, and would like to build my own (very basic) operating system one day.
         </p>
     </div>
     <!-- Accent -->
@@ -86,13 +89,25 @@
     <h2>Work Experience</h2>
     <div class="section-contents">
         <!-- Banner -->
-        <div>
+        <div class="banner">
             <img src="images/MetricWire.png" alt="MetricWire" title="MetricWire" />
             <span class="job-title">Coop: Web Developer</span>
             <span class="job-dates">Jan 2015 - April 2015</span>
         </div>
+        <!-- Badges -->
+        <div class="badge-collection">
+            <img src="images/angularjs.png" title="AngularJS" alt="AngularJS" />
+            <img src="images/nodejs.png" title="NodeJS" alt="NodeJS" />
+            <img src="images/mongodb.png" title="MongoDB" alt="MongoDB" />
+        </div>
         <!-- Job Details -->
-        <p>Worked with GIT, BASH, Angular.JS, Node.JS, and MongoDB to develop the web side of the MetricWire research tools.  More information coming as the term progresses.</p>
+        <p>
+            Worked on the full MetricWire MEAN stack.
+              This stack comprised of MongoDB for database storage, Express for server routes, Angular.JS as a frontend framework, and Node.JS for the server.
+              Throughout my work term I was modifying various aspects of the site, manipulating database collections, creating routes, used an extensive amount of angular directives and even made one, and used many node abilities.
+              One of the most difficult aspects of this job was going in and creating integrated tests for the server backend.
+              During this placement I also worked extensively with the Mobile Development Team to create as close of a match to their native mobile app experiences on the web as possible.
+        </p>
     </div>
     <!-- Accent -->
     <div class="section-accent"></div>
