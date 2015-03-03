@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="stylesheets/metric-wire.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/contact.css" type="text/css" />
     <!-- Script -->
+    <script src="javascripts/parse.js" type="text/javascript"></script>
+    <script src="javascripts/stats.js" type="text/javascript"></script>
     <script src="javascripts/main.js" type="text/javascript"></script>
 </head>
-<body onload="Layout()" onresize="Layout()">
+<body onload="Layout(); stats.sendStats()" onresize="Layout()">
 
 <!-- Header -->
 <div class="header">
