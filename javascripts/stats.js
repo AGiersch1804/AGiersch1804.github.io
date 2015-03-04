@@ -17,6 +17,7 @@ var stats = new (function () {
             this.thisVisit.set('WindowWidth', window.innerWidth);
             this.thisVisit.set('WindowHeight', window.innerHeight);
             this.thisVisit.set('Resume', this.downloadResume);
+            this.thisVisit.save(null);
         if (navigator.geolocation && !this.haveGeolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
                 stats.haveGeolocation = true;
@@ -26,28 +27,16 @@ var stats = new (function () {
                     accuracy: position.coords.accuracy
                 };
                 stats.thisVisit.set('geoLocation', pos);
-                stats.thisVisit.save(null, {
-                    success: function (response) {
-                        console.log(response.id)
-                    }
-                });
+                stats.thisVisit.save(null);
             }, function (err) {
-                stats.geoLocation = {
+                stats.thisVisit.set('geoLocation', {
                     err: err
-                };
-                stats.thisVisit.save(null, {
-                    success: function (response) {
-                        console.log(response.id)
-                    }
                 });
+                stats.thisVisit.save(null);
             });
         } else {
             this.geoLocation = {};
-            this.thisVisit.save(null, {
-                success: function (response) {
-                    console.log(response.id);
-                }
-            });
+            this.thisVisit.save(null);
         }
         };
     } else {
