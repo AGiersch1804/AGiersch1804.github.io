@@ -4,8 +4,9 @@
 */
 
 /* Accent */
-#school > .section-accent
-    { background-color: #E0249A; }
+#school .accent {
+    background-color: #E0249A;
+}
 
 /* School Logo */
 #school > .section-contents > .school-logo
