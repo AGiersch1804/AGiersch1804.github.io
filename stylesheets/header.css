@@ -1,0 +1,25 @@
+#nav {
+    position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    display: block;
+        width: 100%;
+    background-color: black;
+    color: ghostwhite;
+}
+
+#nav h1 {
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+#nav a {
+    margin-top: 2px;
+}
+
+#nav .accent {
+    background-color: orange;
+}

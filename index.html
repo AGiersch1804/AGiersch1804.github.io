@@ -11,6 +11,7 @@
     <!-- Styles -->
         <!-- Overall Page -->
     <link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/header.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/cards.css" type="text/css" />
         <!-- Card Specific -->
     <link rel="stylesheet" href="stylesheets/me.css" type="text/css" />
@@ -22,19 +23,19 @@
 </head>
 <body onload="stats.sendStats()">
 
-<div class="navbar navbar-inverse navbar-fixed-top" id="nav">
-    <div class="navbar-header">
-        <span class="navbar-brand" style="color: ghostwhite; ">Adam Gierscher</span>
+<div id="nav" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-5 text-left">
+            <h1>Adam Gierscher</h1>
+        </div>
+        <div class="col-xs-7 text-right">
+            <a href="Resume.pdf" target="_blank" class="btn btn-lg btn-primary" onclick="stats.downloadResume = true; stats.sendStats(); ">Resume</a>
+            <a href="mailto:a.gierscher@live.ca" target="_blank" class="btn btn-lg btn-primary">Email</a>
+            <a href="http://bit.ly/AGiersch" target="_blank" class="btn btn-lg btn-primary">LinkedIn</a>
+            <a href="http://bit.ly/AGCodes" target="_blank" class="btn btn-lg btn-primary">Github</a>
+        </div>
     </div>
-    <div>
-        <ul class="nav navbar-nav">
-            <li><a href="Resume.pdf">Resume</a></li>
-            <li><a href="mailto:a.gierscher@live.ca" target="_blank">Email</a></li>
-            <li><a href="http://bit.ly/AGiersch" target="_blank">LinkedIn</a></li>
-            <li><a href="http://bit.ly/AGCodes" target="_blank">Github</a></li>
-        </ul>
-    </div>
-    <div class="accent"></div>
+    <div class="row accent"></div>
 </div>
 
 <div class="container text-left">
