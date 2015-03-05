@@ -2,64 +2,18 @@
     text-align: center;
 }
 
+#metric-wire .card-contents {
+    padding-top: 0px;
+}
 /* Accent */
-#metric-wire > .section-accent
+#metric-wire .accent
     { background: linear-gradient(to right, rgba(131, 79, 155, 1), rgba(124, 204, 204, 1)); }
 
 /* Banner */
-#metric-wire > .section-contents > .banner
-{
-    padding-top: 10px;
-    padding-bottom: 45px;
+#metric-wire .card-contents .banner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     background-color: black;
     color: white;
-}
-
-/* Image */
-#metric-wire > .section-contents > .banner > img
-{
-    display: block;
-    margin-left: 15px;
-}
-
-/* Text */
-#metric-wire > .section-contents > .banner > span
-{
-    font-size: 25px;
-    margin: 5px;
-}
-
-#metric-wire > .section-contents > .banner > .job-title
-    { float: left; }
-
-#metric-wire > .section-contents > .banner > .job-dates
-    { float: right; }
-
-/* Job Details */
-#metric-wire > .section-contents >  p
-{
-    display: inline-block;
-    width: 670px;
-    text-align: left;
-    font-size: 20px;
-    font-weight: 100;
-    margin-right: 10px;
-}
-
-/* Badges */
-#metric-wire .badge-collection
-{
-    display: inline-block;
-        width: 100px;
-    float: left;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-}
-#metric-wire .badge-collection > img
-{
-    display: inline-block;
-        width: 90px;
-        margin: 5px;
 }
