@@ -1,47 +1,17 @@
 /* Accent */
-#about-me > .section-accent
-    { background-color: orange; }
+#about-me .accent {
+    background-color: orange;
+}
 
 /* Picture */
-#about-me > .section-contents > img
-{
-    position: absolute;
-        top: 25px;
-        left: 70px;
-        z-index: 1;
-    display: block;
-        width: 215px;
-        height: 215px;
-    border: 10px solid orange;
-    border-radius: 50%;
+#about-me img {
+    border: 5px solid orange;
 }
 
 /* Inspirational Quote */
-#about-me > .section-contents > div
-{
-    position: absolute;
-        bottom: 25px;
-        left: 25px;
-    display: block;
-        width: 305px;
-        padding: 10px;
+#about-me .quote {
+    margin-top: 20px;
+    padding-top: 5px;
     background-color: #CCFFFF;
     border: 1px solid #3385FF;
-    font-size: 20px;
-    padding-top: 0px;
-}
-
-#about-me > .section-contents > div > span
-    { float: right; }
-
-/* About Me */
-#about-me > .section-contents > p
-{
-    position: absolute;
-        top: 25px;
-        left: 400px;
-    display: block;
-        width: 340px;
-        height: 415px;
-    font-size: 20px;
 }
