@@ -21,7 +21,7 @@
     <script src="javascripts/stats.js" type="text/javascript"></script>
     <script src="javascripts/main.js" type="text/javascript"></script>
 </head>
-<body onload="stats.sendStats()">
+<body onload="init(); stats.sendStats()">
 
 <div id="nav" class="container-fluid">
     <div class="row">
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="http://image.maps.api.here.com/mia/1.6/mapview?app_id=9QK7ay0NdHedbVVftv6q&app_code=1gyI_vhCNuWo7ku1SnS7jQ&c=43.468889,-80.54&z=7&w=375&h=465" alt="University of Waterloo" title="University of Waterloo" class="img-responsive col-md-pull-8 col-lg-pull-8 col-xs-offset-0 col-sm-offset-2 col-md-offset-0 col-lg-offset-0 col-xs-12 col-sm-8 col-md-4 col-lg-4" />
+                <img src="" alt="University of Waterloo" title="University of Waterloo" class="img-responsive col-md-pull-8 col-lg-pull-8 col-xs-offset-0 col-sm-offset-2 col-md-offset-0 col-lg-offset-0 col-xs-12 col-sm-8 col-md-4 col-lg-4" id="school-map" />
             </div>
         </div>
     </div>
