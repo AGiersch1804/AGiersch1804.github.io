@@ -1,17 +1,131 @@
-/* Accent */
-#about-me .accent {
+#me {
+    background-color: whitesmoke;
+    position: absolute;
+    display: block;
+}
+#me > .accent {
+    position: absolute;
+        left: 0px;
     background-color: orange;
 }
-
-/* Picture */
-#about-me img {
+#me > img {
+    position: absolute;
+    border-radius: 50%;
     border: 5px solid orange;
 }
+#me > h1 {
+    position: absolute;
+}
+#me > a {
+    position: absolute;
+    display: block;
+        width: 225px;
+        height: 50px;
+    border: 1px solid black;
+    font-weight: 500;
+    background-color: lightgrey;
+}
+#me > a > span {
+    position: absolute;
+        top: 13px;
+        right: 15px;
+}
+#me > a > img {
+    position: absolute;
+        top: 0px;
+        left: -25px;
+    height: 50px;
+    border-radius: 50%;
+}
 
-/* Inspirational Quote */
-#about-me .quote {
-    margin-top: 20px;
-    padding-top: 5px;
-    background-color: #CCFFFF;
-    border: 1px solid #3385FF;
+@media (max-width: 1200px) {
+    #me {
+        top: 0px;
+        left: 0px;
+        width: 800px;
+    }
+    #me > .accent {
+        top: 50px;
+    }
+    #me > img {
+        border-width: 0px;
+        width: 85px;
+        top: 10px;
+        left: 10px;
+    }
+    #me > h1 {
+        bottom: -5px;
+        left: 105px;
+    }
+    #me > p {
+        visibility: hidden;
+    }
+    #me > a {
+    
+    }
+    #me > a:nth-of-type(1) {
+        bottom: 250px;
+    }
+    #me > a:nth-of-type(2) {
+        bottom: 175px;
+    }
+    #me > a:nth-of-type(3) {
+        bottom: 100px;
+    }
+    #me > a:nth-of-type(4) {
+        bottom: 25px;
+    }
+    #me > a > img {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    #me {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #me {
+        top: 150px;
+        left: 0px;
+        width: 300px;
+        height: 600px;
+    }
+    #me > .accent {
+        top: -5px;
+    }
+    #me > img {
+        top: -100px;
+        left: 50px;
+        width: 190px;
+    }
+    #me > h1 {
+        top: 110px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    #me > p {
+       display: block;
+    }
+    #me > a {
+        right: 25px;
+    }
+    #me > a:nth-of-type(1) {
+        bottom: 250px;
+    }
+    #me > a:nth-of-type(2) {
+        bottom: 175px;
+    }
+    #me > a:nth-of-type(3) {
+        bottom: 100px;
+    }
+    #me > a:nth-of-type(4) {
+        bottom: 25px;
+    }
+    #me > a > img {
+        display: block;
+    }
 }

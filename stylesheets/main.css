@@ -1,26 +1,62 @@
-body
-{
-    display: block;
-    font-family: "segoe ui", "arial", "noto sans", "ubuntu light", sans-serif;
-    font-weight: 100;
+body {
     background-color: silver;
-    overflow-x: hidden;
-    overflow-y: visible;
-    padding: 50px 0px 25px 0px;
-    text-align: center;
-}
-
-* > span, * > p, * > div {
     font-weight: 100;
-    font-size: 20px;
+    font-family: 'segoe ui', 'arial', sans-serif;
+    text-align: center;
+    margin: 0px;
 }
 
-/* Navigation Accent */
-#nav .accent {
-    position: absolute;
-        bottom: -1px;
+h1 {
+    font-weight: 100;
+    margin: 0px;
+    line-height: none;
+}
+
+
+body > div {
+    position: relative;
+    border: 5px solid black;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+    display: inline-block;
+    text-align: left;
+    min-height: 1800px;
+}
+
+.accent {
     display: block;
         width: 100%;
         height: 5px;
     background-color: orange;
 }
+
+@media (max-width: 540px) {
+    body > div {
+        width: 540px;
+    }
+}
+
+@media (max-width: 800px) {
+    body > div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    body > div {
+        width: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body > div {
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1800px) {
+    body > div {
+        width: 1800px;
+    }
+}
+

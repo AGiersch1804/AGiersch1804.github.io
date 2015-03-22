@@ -2,16 +2,12 @@
 <html lang="en">
 <head>
     <title>Adam Gierscher</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- Parse -->
     <script src="//www.parsecdn.com/js/parse-1.3.5.min.js"></script>
     <!-- Styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <!-- Overall Page -->
     <link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
-    <link rel="stylesheet" href="stylesheets/header.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/cards.css" type="text/css" />
         <!-- Card Specific -->
     <link rel="stylesheet" href="stylesheets/me.css" type="text/css" />
@@ -21,161 +17,41 @@
     <script src="javascripts/stats.js" type="text/javascript"></script>
     <script src="javascripts/main.js" type="text/javascript"></script>
 </head>
-<body onload="init(); stats.sendStats()">
+<body onload="">
 
-<div id="nav" class="container-fluid">
-    <div class="row">
-        <div class="col-xs-5 text-left">
-            <h1>Adam Gierscher</h1>
-        </div>
-        <div class="col-xs-7 text-right">
-            <a href="Resume.pdf" target="_blank" class="btn btn-lg btn-primary" onclick="stats.downloadResume = true; stats.sendStats(); ">Resume</a>
-            <a href="mailto:a.gierscher@live.ca" target="_blank" class="btn btn-lg btn-primary">Email</a>
-            <a href="http://bit.ly/AGiersch" target="_blank" class="btn btn-lg btn-primary">LinkedIn</a>
-            <a href="http://bit.ly/AGCodes" target="_blank" class="btn btn-lg btn-primary">Github</a>
-        </div>
-    </div>
-    <div class="row accent"></div>
-</div>
-
-<div class="container text-left">
+<div>
     <!-- About Me -->
-    <div class="row card" id="about-me">
-        <div class="col-xs-12">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2>About Me</h2>
-                </div>
-            </div>
-            <div class="row accent"></div>
-            <div class="row card-contents">
-                <div class="col-xs-12">
-                    <div class="row">
-                            <div class="col-xs-12 col-lg-4">
-                                <div class="row">
-                                    <div class="col-xs-offset-3 col-sm-offset-4 col-md-offset-4 col-lg-offset-2 col-xs-6 col-sm-4 col-md-4 col-lg-8">
-                                        <img src="images/me.jpg" class="img-circle img-responsive" alt="Adam Gierscher" title="Adam Gierscher" />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-offset-1 col-sm-offset-1 col-md-offet-1 col-xs-10 col-sm-10 col-md-10 quote">
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                "What really matters is what you create.
-                                                  Does it work or not?
-                                                  Does it make you proud?"
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 text-right">
-                                                Richard Branson
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                           
-                            </div>
-                            <div class="col-xs-offset-1 col-lg-offset-0 col-xs-10 col-lg-8">
-                                <p>
-                                    Hi I'm Adam.
-                                    <br />
-                                    <br />
-                                    I'm a mathematics student at the University of Waterloo located in Ontario, Canada.
-                                        I have a strong passion for web development, because I can create marvels of all kinds with it.
-                                        I'd love to learn about operating systems and application environments, and would like to build my own (very basic) operating system one day.
-                                </p>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
+    <div id="me">
+        <div class="accent"></div>
+        <img src="images/me.jpg" alt="Adam Gierscher" title="Adam Gierscher" />
+        <h1>Adam Gierscher</h1>
+        <p>Something Cool</p>
+        <!-- Resume -->
+        <a>
+            <img />
+            <span>Resume</span>
+        </a>
+        <!-- Email -->
+        <a>
+            <img />
+            <span>Email: a.gierscher@live.ca</span>
+        </a>
+        <!-- LinkedIn -->
+        <a>
+            <img src="images/linkedin.png" title="LinkedIn" title="LinkedIn" />
+            <span>LinkedIn</span>
+        </a>
+        <!-- Github -->
+        <a>
+            <img src="images/github.jpg" title="Github" title="Github">
+            <span>GitHub</span>
+        </a>
     </div>
-    <!-- School -->
-    <div id="school" class="row card">
-        <div class="col-xs-12">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2>Education</h2>
-                </div>
-            </div>
-            <div class="row accent"></div>
-            <div class="row card-contents">
-                <div class="col-md-push-4 col-lg-push-4 col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="row">
-                                <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 col-xs-4 col-sm-3">
-                                    <img src="images/uw.gif" alt="University of Waterloo" title="University of Waterloo" class="img-responsive" id="school-logo" />
-                                </div>
-                                <div class="col-xs-6 col-sm-7 text-center">
-                                    <h3>University of Waterloo</h3>
-                                    <h3>Major: Mathematics</h3>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 col-xs-10">
-                                    <ul>
-                                        <li>Algebra</li>
-                                        <li>Calculus (parts 1 and 2)</li>
-                                        <li>Designing Functional Programs</li>
-                                        <li>Elementary Algorithm Design and Data Abstraction</li>
-                                        <li>Linear Algebra (parts 1 and 2)</li>
-                                        <li>Logic and Computation</li>
-                                        <li>Object-Oriented Software Development</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img src="" alt="University of Waterloo" title="University of Waterloo" class="img-responsive col-md-pull-8 col-lg-pull-8 col-xs-offset-0 col-sm-offset-2 col-md-offset-0 col-lg-offset-0 col-xs-12 col-sm-8 col-md-4 col-lg-4" id="school-map" />
-            </div>
-        </div>
-    </div>
-    <!-- Work -->
-        <!-- MetricWire -->
-    <div class="row card" id="metric-wire">
-        <div class="col-xs-12">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2>Work Experience - MetricWire</h2>
-                </div>
-            </div>
-            <div class="row accent"></div>
-            <div class="row card-contents">
-                <div class="col-xs-12">
-                    <div class="row banner">
-                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                            <img src="images/MetricWire.png" alt="MetricWire" title="MetricWire" class="img-responsive"/>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                            <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12 text-center">
-                                Coop: Web Developer
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12 text-center">
-                                Jan 2015 - April 2015
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
-                            <img src="images/angularjs.png" title="AngularJS" alt="AngularJS" class="col-xs-offset-0 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 col-xs-4 col-sm-2 col-md-12 col-lg-12" />
-                            <img src="images/nodejs.png" title="NodeJS" alt="NodeJS" class="col-xs-offset-0 col-sm-offset-2 col-md-offset-0 col-lg-offset-0 col-xs-4 col-sm-2 col-md-12 col-lg-12" />
-                            <img src="images/mongodb.png" title="MongoDB" alt="MongoDB" class="col-xs-offset-0 col-sm-offset-2 col-md-offset-0 col-lg-offset-0 col-xs-4 col-sm-2 col-md-12 col-lg-12" />
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
-                            <p>
-                                Worked on the full MetricWire MEAN stack.
-                                    This stack comprised of MongoDB for database storage, Express for server routes, Angular.JS as a frontend framework, and Node.JS for the server.
-                                    Throughout my work term I was modifying various aspects of the site, manipulating database collections, creating routes, used an extensive amount of angular directives and even made one, and used many node abilities.
-                                    One of the most difficult aspects of this job was going in and creating integrated tests for the server backend.
-                                    During this placement I also worked extensively with the Mobile Development Team to create as close of a match to their native mobile app experiences on the web as possible.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+    <!-- Education -->
+    
+    <!-- Work: MetricWire -->
+
 </div>
 
 </body>
