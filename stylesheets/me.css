@@ -3,11 +3,6 @@
     position: absolute;
     display: block;
 }
-#me > .accent {
-    position: absolute;
-        left: 0px;
-    background-color: orange;
-}
 #me > img {
     position: absolute;
     border-radius: 50%;
@@ -18,24 +13,23 @@
 }
 #me > a {
     position: absolute;
+        left: 0px;
     display: block;
-        width: 225px;
-        height: 50px;
-    border: 1px solid black;
+        width: 100%;
+    border: 0px solid black;
+        border-top-width: 1px;
+    font-size: large;
     font-weight: 500;
     background-color: lightgrey;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-#me > a > span {
+#me > p {
     position: absolute;
-        top: 13px;
-        right: 15px;
-}
-#me > a > img {
-    position: absolute;
-        top: 0px;
-        left: -25px;
-    height: 50px;
-    border-radius: 50%;
+        top: 160px;
+        left: 5px;
+    width: 290px;
 }
 
 @media (max-width: 1200px) {
@@ -43,9 +37,6 @@
         top: 0px;
         left: 0px;
         width: 800px;
-    }
-    #me > .accent {
-        top: 50px;
     }
     #me > img {
         border-width: 0px;
@@ -78,6 +69,9 @@
     #me > a > img {
         display: none;
     }
+    #me > p {
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
@@ -92,9 +86,8 @@
         left: 0px;
         width: 300px;
         height: 600px;
-    }
-    #me > .accent {
-        top: -5px;
+        border: 1px solid orange;
+        border-top-width: 5px;
     }
     #me > img {
         top: -100px;
@@ -114,18 +107,18 @@
         right: 25px;
     }
     #me > a:nth-of-type(1) {
-        bottom: 250px;
+        bottom: 105px;
     }
     #me > a:nth-of-type(2) {
-        bottom: 175px;
+        bottom: 70px;
     }
     #me > a:nth-of-type(3) {
-        bottom: 100px;
+        bottom: 35px;
     }
     #me > a:nth-of-type(4) {
-        bottom: 25px;
+        bottom: 0px;
     }
-    #me > a > img {
+    #me > p {
         display: block;
     }
 }
