@@ -2,6 +2,9 @@
     background-color: whitesmoke;
     position: absolute;
     display: block;
+    border: 0px solid orange;
+        border-right-width: 1px;
+        border-left-width: 1px;
 }
 #me > img {
     position: absolute;
@@ -13,23 +16,27 @@
 }
 #me > a {
     position: absolute;
-        left: 0px;
     display: block;
-        width: 100%;
-    border: 0px solid black;
+    border-style: solid;
+    border-color: orange;
+    border-width: 0px;
         border-top-width: 1px;
-    font-size: large;
     font-weight: 500;
-    background-color: lightgrey;
     text-align: center;
+    font-size: large;
+    background-color: lightgrey;
     padding-top: 5px;
     padding-bottom: 5px;
+     text-decoration: none;
+    color: black;
 }
 #me > p {
     position: absolute;
-        top: 160px;
-        left: 5px;
-    width: 290px;
+        top: 180px;
+        left: 10px;
+    width: 280px;
+    font-size: large;
+    text-indent: 50px;
 }
 
 @media (max-width: 1200px) {
@@ -37,39 +44,44 @@
         top: 0px;
         left: 0px;
         width: 800px;
+        height: 50px;
+        border-top-width: 0px;
+        border-bottom-width: 5px;
     }
     #me > img {
-        border-width: 0px;
+        border-width: 2px;
         width: 85px;
-        top: 10px;
-        left: 10px;
+        top: 8px;
+        left: 8px;
     }
     #me > h1 {
-        bottom: -5px;
+        bottom: -8px;
         left: 105px;
     }
     #me > p {
-        visibility: hidden;
-    }
-    #me > a {
-    
-    }
-    #me > a:nth-of-type(1) {
-        bottom: 250px;
-    }
-    #me > a:nth-of-type(2) {
-        bottom: 175px;
-    }
-    #me > a:nth-of-type(3) {
-        bottom: 100px;
-    }
-    #me > a:nth-of-type(4) {
-        bottom: 25px;
-    }
-    #me > a > img {
         display: none;
     }
-    #me > p {
+    #me > a {
+        border-right-width: 1px;
+        bottom: 0px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    #me > a:nth-of-type(1) {
+        right: 307px;
+        border-left-width: 1px;
+    }
+    #me > a:nth-of-type(2) {
+        right: 145px;
+    }
+    #me > a:nth-of-type(3) {
+        right: 67px;
+    }
+    #me > a:nth-of-type(4) {
+        right: 0px;
+        border-right-width: 0px;
+    }
+    #me > a > img {
         display: none;
     }
 }
@@ -86,8 +98,8 @@
         left: 0px;
         width: 300px;
         height: 600px;
-        border: 1px solid orange;
         border-top-width: 5px;
+        border-bottom-width: 0px;
     }
     #me > img {
         top: -100px;
@@ -104,7 +116,9 @@
        display: block;
     }
     #me > a {
+        left: 0px;
         right: 25px;
+        width: 100%;
     }
     #me > a:nth-of-type(1) {
         bottom: 105px;
@@ -117,8 +131,6 @@
     }
     #me > a:nth-of-type(4) {
         bottom: 0px;
-    }
-    #me > p {
-        display: block;
+        border-bottom-width: 1px;
     }
 }
