@@ -6,7 +6,7 @@ body {
     margin: 0px;
 }
 
-h1, p {
+h1, h2, h3, p {
     font-weight: 100;
     margin: 0px;
     line-height: none;
@@ -14,8 +14,6 @@ h1, p {
 
 body > div {
     position: relative;
-    border: 0px solid black;
-        border-right-width: 5px;
     display: inline-block;
     text-align: left;
     min-height: 1800px;
