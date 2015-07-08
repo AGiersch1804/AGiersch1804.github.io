@@ -1,22 +1,12 @@
 body {
     background-color: silver;
-    font-weight: 100;
-    font-family: 'segoe ui', 'arial', sans-serif;
-    text-align: center;
-    margin: 0px;
 }
 
-h1, h2, h3, p {
+* {
     font-weight: 100;
-    margin: 0px;
+    margin: 0;
     line-height: none;
-}
-
-body > div {
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    min-height: 1800px;
+    font-family: 'segoe ui', 'arial', sans-serif;
 }
 
 .accent {
@@ -26,33 +16,39 @@ body > div {
     background-color: orange;
 }
 
-@media (max-width: 540px) {
-    body > div {
-        width: 540px;
-    }
+body > div {
+    position: absolute;
+        top: 0;
+    display: inline-block;
+    min-height: 100%;
 }
 
-@media (max-width: 800px) {
+/* Phones */
+@media (max-width: 6in) {
     body > div {
+        left: 0;
         width: 100%;
+        background-color: blue;
     }
 }
 
-@media (min-width: 800px) {
+/* Tablets */
+@media (min-width: 6in) {
     body > div {
-        width: 800px;
+        left: 0;
+        width: 100%;
+        background-color: green;
     }
 }
 
-@media (min-width: 1200px) {
+/* PCs
+@media (min-width: 10in) {
     body > div {
-        width: 1200px;
+        left: calc((100% - 1366px) / 2);
+        min-width: 10in;
+        width: 100%;
+        max-width: 1366px;
+        background-color: red;
     }
 }
-
-@media (min-width: 1800px) {
-    body > div {
-        width: 1800px;
-    }
-}
-
+ */
