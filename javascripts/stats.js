@@ -4,12 +4,13 @@
     * Redo geolocation detection
 
 */
+'use strict';
 
 var stats = new (function () {
     Parse.initialize('TfB55CTBEG5KCMI7kyKgZpyF0MR1kEAkZrPSc18m', 'obD2yOqye1icM9u4d8CdUFVJoGYsaP2Uf20VWT1N');
     this.downloadResume = false;
     this.haveGeolocation = false;
-    if (location.hostname !== 'localhost') {
+    if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
         if (!this.thisVisit) {
             var Visit = Parse.Object.extend('Visit');
             this.thisVisit = new Visit();
