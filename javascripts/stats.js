@@ -1,3 +1,10 @@
+/*
+    TODO:
+    
+    * Redo geolocation detection
+
+*/
+
 var stats = new (function () {
     Parse.initialize('TfB55CTBEG5KCMI7kyKgZpyF0MR1kEAkZrPSc18m', 'obD2yOqye1icM9u4d8CdUFVJoGYsaP2Uf20VWT1N');
     this.downloadResume = false;
@@ -17,27 +24,8 @@ var stats = new (function () {
             this.thisVisit.set('WindowWidth', window.innerWidth);
             this.thisVisit.set('WindowHeight', window.innerHeight);
             this.thisVisit.set('Resume', this.downloadResume);
+            this.thisVisit.set('geoLocation', {});
             this.thisVisit.save(null);
-        if (navigator.geolocation && !this.haveGeolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                stats.haveGeolocation = true;
-                var pos = {
-                    latitude: position.coords.latitude,
-                    longitude: position.coords.longitude,
-                    accuracy: position.coords.accuracy
-                };
-                stats.thisVisit.set('geoLocation', pos);
-                stats.thisVisit.save(null);
-            }, function (err) {
-                stats.thisVisit.set('geoLocation', {
-                    err: err
-                });
-                stats.thisVisit.save(null);
-            });
-        } else {
-            this.geoLocation = {};
-            this.thisVisit.save(null);
-        }
         };
     } else {
         this.sendStats = function () {
