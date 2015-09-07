@@ -1,0 +1,122 @@
+body {
+  font-family: "segoe-ui", "roboto", sans-serif;
+  font-weight: 100;
+  background-color: #33ccff;
+  font-size: large;
+  padding-bottom: 50px;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0; }
+
+main {
+  margin-top: 20%;
+  margin-bottom: 100px; }
+
+.container {
+  padding-left: 0;
+  padding-right: 0; }
+
+.container > .row {
+  margin-top: 30px; }
+
+.container > .row:first-of-type {
+  margin-top: 0; }
+
+.title {
+  margin-bottom: -30px; }
+  .title h1, .title h2, .title h3, .title h4, .title h5, .title h6, .title h7 {
+    margin: 0; }
+
+.card {
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.75);
+  -webkit-box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.75);
+  background-color: white;
+  padding: 0 15px 0 15px; }
+  .card .row:first-of-type {
+    padding-top: 15px; }
+  .card .row:last-of-type {
+    padding-bottom: 15px; }
+
+img.card {
+  width: 100%;
+  padding: 0; }
+
+.card-header {
+  padding-bottom: 15px; }
+
+.card-button {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  transition: background-color 0.25s, color 0.25s;
+  -moz-transition: background-color 0.25s, color 0.25s;
+  -o-transition: background-color 0.25s, color 0.25s;
+  -webkit-transition: background-color 0.25s, color 0.25s; }
+
+@media (min-width: 1200px) {
+  #about-me {
+    height: 370.57px; } }
+#about-me .card-contents {
+  height: 235.26px; }
+#about-me .card-footer {
+  padding: 0;
+  background-color: orange; }
+#about-me .card-button {
+  background-color: darkorange;
+  font-size: 25px;
+  color: black; }
+  #about-me .card-button:hover, #about-me .card-button:active, #about-me .card-button:visited {
+    color: black; }
+#about-me p {
+  font-size: 22px; }
+
+#school .card-header {
+  background-color: #FCD450; }
+#school progress {
+  padding: 0;
+  background-color: #000000;
+  color: #E0249A;
+  border: 0 solid transparent;
+  margin-bottom: 10px; }
+
+#htn > div:first-of-type .card {
+  background-color: #9fffff;
+  padding: 25px; }
+#htn .card {
+  height: 370.57px; }
+#htn .card-contents {
+  height: 233.46px; }
+#htn .card-footer {
+  background-color: #3bb4d8;
+  color: white; }
+#htn .card-button {
+  background-color: #007096;
+  font-size: 25px;
+  color: white; }
+  #htn .card-button:hover, #htn .card-button:active, #htn .card-button:visited {
+    color: white;
+    text-decoration: none; }
+#htn p {
+  font-size: 22px; }
+
+#mw .card-header {
+  background-color: black; }
+  #mw .card-header .row {
+    padding-top: 15px; }
+#mw .card-button {
+  background-color: #834f9b;
+  color: white;
+  font-size: 30px;
+  transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  -webkit-transition: background-color 0.5s, color 0.5s; }
+#mw .card-button-on {
+  background-color: #7ccccc;
+  color: black; }
+#mw p {
+  font-size: 22px; }
+
+/*# sourceMappingURL=main.css.map */

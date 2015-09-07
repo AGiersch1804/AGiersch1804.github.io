@@ -1,0 +1,18 @@
+@mixin box-shadow($x, $y, $blur, $colour) {
+	box-shadow: $x $y $blur $colour;
+		-moz-box-shadow: $x $y $blur $colour;
+		-webkit-box-shadow: $x $y $blur $colour;
+}
+
+@mixin border-radius($radius...) {
+	border-radius: $radius;
+		-moz-border-radius: $radius;
+		-webkit-border-radius: $radius;
+}
+
+@mixin transition($what...) {
+	transition: $what;
+		-moz-transition: $what;
+		-o-transition: $what;
+		-webkit-transition: $what;
+}

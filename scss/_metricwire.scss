@@ -1,0 +1,27 @@
+@import "_media.scss";
+@import "_venders.scss";
+
+$mw-blue: rgba(124, 204, 204, 1);
+$mw-purple: rgba(131, 79, 155, 1);
+
+#mw {
+	.card-header {
+		background-color: black;
+		.row {
+			padding-top: 15px;
+		}
+	}
+	.card-button {
+		background-color: $mw-purple;
+		color: white;
+		font-size: 30px;
+		@include transition(background-color 0.5s, color 0.5s);
+	}
+	.card-button-on {
+		background-color: $mw-blue;
+		color: black;
+	}
+	p {
+		font-size: 22px;
+	}
+}

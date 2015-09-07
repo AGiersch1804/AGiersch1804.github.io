@@ -1,0 +1,29 @@
+@import "_media.scss";
+@import "_venders.scss";
+
+@include desktop {
+	#about-me {
+		height: 370.57px;
+	}
+}
+
+#about-me {
+	.card-contents {
+		height: 235.26px;
+	}
+	.card-footer {
+		padding: 0;
+		background-color: orange;
+	}
+	.card-button {
+		background-color: darkorange;
+		font-size: 25px;
+		color: black;
+		&:hover, &:active, &:visited {
+			color: black;
+		}
+	}
+	p {
+		font-size: 22px;
+	}
+}

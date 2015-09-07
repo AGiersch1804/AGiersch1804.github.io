@@ -1,0 +1,29 @@
+@import "_media.scss";
+@import "_venders.scss";
+
+$uw-black: #000000;
+$uw-white: #FFFFFF;
+$uw-gold: #FCD450;
+$uw-grey-light: #EEEEEE;
+$uw-grey-dark: #757575;
+$uw-math-light: #FF88DD;
+$uw-math-dark: #E0249A;
+$uw-school-light: #F77777;
+$uw-school-dark: #96172E;
+$sj-green-light: #92B7AC;
+$sj-green-dark: #01573E;
+$sj-gold-light: #C88A11;
+$sj-gold-dark: #8D590B;
+
+#school {
+	.card-header {
+		background-color: $uw-gold;
+	}
+	progress {
+		padding: 0;
+		background-color: $uw-black;
+		color: $uw-math-dark;
+		border: 0 solid transparent;
+		margin-bottom: 10px;
+	}
+}

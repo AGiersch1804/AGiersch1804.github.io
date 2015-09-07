@@ -1,0 +1,39 @@
+@import "_media.scss";
+@import "_venders.scss";
+
+.card {
+	@include box-shadow(5px, 5px, 5px, rgba(128, 128, 128, 0.75));
+	background-color: white;
+	padding: 0 15px 0 15px;
+	.row:first-of-type {
+		padding-top: 15px;
+	}
+	.row:last-of-type {
+		padding-bottom: 15px;
+	}
+}
+
+img.card {
+	width: 100%;
+	padding: 0;
+}
+
+.card-header {
+	padding-bottom: 15px;
+}
+
+.card-contents {
+	
+}
+
+.card-footer {
+	
+}
+
+.card-button {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	@include transition(background-color 0.25s, color 0.25s);
+}
