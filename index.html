@@ -1,80 +1,109 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" data-ng-app="agApp">
 <head>
     <title>Adam Gierscher</title>
     <!-- Roboto Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css" />
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <!-- Angular -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc7/angular-material.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc7/angular-material.min.css" />
     <!-- Scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
 </head>
-<body>
+<body layout="column" data-ng-controller="agController">
 
-    <header>
+   <md-content layout="column" flex>
 
-        <div>
+       <md-toolbar layout="row">
+           <div class="md-toolbar-tools" layout="row" flex>
+               Adam Gierscher
+           </div>
+       </md-toolbar>
 
-            <img src="images/me.jpg" />
+       <md-content flex layout="row">
 
-            <h1>Adam Gierscher</h1>
+           <md-content flex="33" layout="column" layout-align="center center">
 
-            <div>
+               <md-card>
+                   <md-card-title>
+                       <md-card-title-text>
+                           <span class="md-headline">Adam Gierscher</span>
+                        </md-card-title-text>
+                       <md-card-title-media>
+                           <img class="card-media md-media-sm" src="images/me.jpg" />
+                       </md-card-title-media>
+                   </md-card-title>
 
-                <a href="mailto:a.gierscher@live.ca" target="_blank">Email Me</a>
+                   <md-divider></md-divider>
 
-                <a href="https://ca.linkedin.com/in/agiersch" target="_blank">LinkedIn</a>
+                   <md-card-actions layout="row" layout-align="center center">
+                       <md-button>Email</md-button>
+                       <md-button>Resume</md-button>
+                       <md-button>LinkedIn</md-button>
+                       <md-button>Github</md-button>
+                   </md-card-actions>
+               </md-card>
 
-                <a href="https://github.com/AGiersch1804" target="_blank">GitHub</a>
+           </md-content>
 
-                <a href="Resume.pdf" target="_blank">Resume</a>
+           <md-content flex layout="column" layout-padding>
 
-            </div>
+               <md-card>
+                   <md-card-title>
+                       <md-card-title-text>
+                           <span class="md-headline">University of Waterloo</span>
+                           <span class="md-subhead">Honours Mathematics</span>
+                       </md-card-title-text>
+                       <md-card-title-media>
+                           <img class="card-media md-media-sm" src="images/uw.gif" />
+                       </md-card-title-media>
+                   </md-card-title>
 
-        </div>
+                   <md-card-content layout="column">
+                       <img src="https://maps.googleapis.com/maps/api/staticmap?format=jpg&zoom=5&scale=1&maptype=roadmap&size=600x200&markers=43.469025,-80.54068" />
+                       <br /><br />
+                       Classes
+                       <md-content layout="row">
+                            <ul flex data-ng-repeat="subject in schoolStuff">
+                                <li data-ng-repeat="class in subject.classes">{{ class }}</li>
+                            </ul>
+                        </md-content>
+                   </md-card-content>
+               </md-card>
 
-    </header>
+               <md-card>
+                   <md-card-title>
+                       <md-card-title-text>
+                           <span class="md-headline">MetricWire</span>
+                           <span class="md-subhead">iOS Developer</span>
+                       </md-card-title-text>
+                       <md-card-title-media>
+                           <img class="card-media md-media-sm" src="images/mw.png" />
+                       </md-card-title-media>
+                   </md-card-title>
+               </md-card>
 
-    <main>
-        
-        <section>
-
-            <h2>About Me</h2>
-
-            <article>Something really cool, but yet to be made up</article>
-
-        </section>
-
-        <section>
-
-            <img src="images/uw.gif" title="University of Waterloo" alt="University of Waterloo" />
-
-            <h2>Education</h2>
-
-            <article>Something really cool, but yet to be made up</article>
-
-        </section>
-
-        <section>
-
-            <img src="images/mw.png" title="MetricWire" alt="MetricWire" />
-
-            <h2>MetricWire</h2>
-
-            <article>Something really cool, but yet to be made up</article>
-
-        </section>
-
-        <section>
-
-            <img src="images/tck.png" title="Transylvania Club of Kitchener" alt="Transylvania Club of Kitchener" />
-
-            <h2>TCK</h2>
-
-            <article>Something really cool, but yet to be made up</article>
-
-        </section>
-
-    </main>
+               <md-card>
+                   <md-card-title>
+                       <md-card-title-text>
+                           <span class="md-headline">MetricWire</span>
+                           <span class="md-subhead">Web Developer</span>
+                       </md-card-title-text>
+                       <md-card-title-media>
+                           <img class="card-media md-media-sm" src="images/mw.png" />
+                       </md-card-title-media>
+                   </md-card-title>
+               </md-card>
+           </md-content>
+       </md-content>
+   </md-content>
 
 </body>
 </html>
