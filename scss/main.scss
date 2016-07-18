@@ -168,6 +168,32 @@ $htn-blue-dark: rgb(0, 112, 150) !global;
 	margin-bottom: 20px;
 }
 
+// Blue Coat
+$bc-blue: rgba(38, 172, 226,1);
+#blue-coat > .section-contents {
+    text-align: center;
+}
+#blue-coat {
+    .card-header {
+		padding-top: 20px;
+		background-color: black;
+	}
+	.card-contents {
+	    padding-top: 0;
+		
+		.banner {
+		    padding-top: 20px;
+		    padding-bottom: 20px;
+		    margin-bottom: 20px;
+		    background-color: black;
+		    color: white;
+		}	
+	}
+    .accent {
+        background-color: $bc-blue;
+    }
+}
+
 // MetricWire
 $mw-blue: rgba(124, 204, 204, 1);
 $mw-purple: rgba(131, 79, 155, 1);

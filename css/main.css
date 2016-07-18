@@ -113,6 +113,23 @@ body {
 #htn-logo {
   margin-bottom: 20px; }
 
+#blue-coat > .section-contents {
+  text-align: center; }
+
+#blue-coat .card-header {
+  padding-top: 20px;
+  background-color: black; }
+#blue-coat .card-contents {
+  padding-top: 0; }
+  #blue-coat .card-contents .banner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white; }
+#blue-coat .accent {
+  background-color: #26ace2; }
+
 #metric-wire > .section-contents {
   text-align: center; }
 
