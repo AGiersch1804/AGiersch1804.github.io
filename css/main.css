@@ -88,17 +88,68 @@ body {
 #school-logo {
   margin-bottom: 20px; }
 
+#school .card-header {
+  background-color: #FFD54F;
+  padding: 8px; }
 #school .card-contents {
-  padding-top: 15px;
-  padding-bottom: 15px; }
-#school .card-contents > div {
-  padding-top: 5px;
-  padding-bottom: 5px; }
+  padding: 0; }
+  #school .card-contents .banner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-bottom: 10px; }
 #school .accent {
-  background-color: #E0249A; }
+  height: 18px;
+  background-color: #FFFFFF; }
+  #school .accent div {
+    width: 25%;
+    height: 9px;
+    display: inline-block;
+    position: absolute;
+    top: 42px; }
+  #school .accent div:first-of-type {
+    background-color: #000000;
+    width: 100%;
+    top: 33px; }
+  #school .accent div:nth-of-type(2) {
+    background-color: #FFBEEF; }
+  #school .accent div:nth-of-type(3) {
+    left: 25%;
+    background-color: #FF63AA; }
+  #school .accent div:nth-of-type(4) {
+    left: 50%;
+    background-color: #DF2498; }
+  #school .accent div:nth-of-type(5) {
+    left: 75%;
+    background-color: #C60078; }
 #school h3 {
   font-size: 30px;
   font-weight: 100; }
+
+#duke-of-ed .accent {
+  line-height: 0; }
+  #duke-of-ed .accent div {
+    width: 20%;
+    height: inherit;
+    display: inline-block;
+    position: absolute; }
+  #duke-of-ed .accent div:first-of-type {
+    background-color: #ee2651; }
+  #duke-of-ed .accent div:nth-of-type(2) {
+    background-color: #ffd820;
+    left: 20%; }
+  #duke-of-ed .accent div:nth-of-type(3) {
+    background-color: #00aeef;
+    left: 40%; }
+  #duke-of-ed .accent div:nth-of-type(4) {
+    background-color: #82c55b;
+    left: 60%; }
+  #duke-of-ed .accent div:last-of-type {
+    background-color: #8c5ba6;
+    right: 0; }
+#duke-of-ed .card-header {
+  background-color: white; }
 
 #htn .card-header {
   padding: 10px 0 10px 0;

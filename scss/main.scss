@@ -108,42 +108,165 @@ body {
 }
 
 // School
-// https://uwaterloo.ca/brand-guidelines/visual-identity/digital-colour-palette
-$uw-black: #000000;
+// https://uwaterloo.ca/brand/visual-expression/colour-palette
+// Note: L3 is the primary
+
+    // White
 $uw-white: #FFFFFF;
-$uw-gold: #FCD450;
-$uw-grey-light: #EEEEEE !global;
-$uw-math-light: #FF88DD !global;
-$uw-school-light: #F77777 !global;
-$sj-green-light: #92B7AC !global;
-$sj-gold-light: #C88A11 !global;
-$uw-grey-dark: #757575 !global;
-$uw-math-dark: #E0249A !global;
-$uw-school-dark: #96172E !global;
-$sj-green-dark: #01573E !global;
-$sj-gold-dark: #8D590B !global;
+
+    // Black / Grey
+$uw-grey-l1: #DFDFDF;
+$uw-grey-l2: #A2A2A2;
+$uw-grey-l3: #787878;
+$uw-grey-l4: #000000; // black
+
+    // Gold
+$uw-gold-l1: #FFFFAA;
+$uw-gold-l2: #FFEA3D;
+$uw-gold-l3: #FFD54F;
+$uw-gold-l4: #E4B429;
+
+
+    // Satellites
+$uw-satellite-l1: #FFA5AA;
+$uw-satellite-l2: #E41740;
+$uw-satellite-l3: #B71233;
+$uw-satellite-l4: #80001F;
+
+    // Math Faculty
+$uw-math-l1: #FFBEEF;
+$uw-math-l2: #FF63AA;
+$uw-math-l3: #DF2498;
+$uw-math-l4: #C60078;
+
+    // SJ
+$sj-green-dark: #01573E;
+$sj-gold-dark: #8D590B;
+$sj-green-light: #92B7AC;
+$sj-gold-light: #C88A11;
 #school-logo {
     margin-bottom: 20px;
 }
 #school {
+    .card-header {
+        background-color: $uw-gold-l3;
+        padding: 8px;
+    }
+    
 	.card-contents {
-	    padding-top: 15px;
-	    padding-bottom: 15px;
-	}
-
-	.card-contents > div {
-	    padding-top: 5px;
-	    padding-bottom: 5px;
+        padding: 0;
+        
+        .banner {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: $uw-grey-l4;
+            color: $uw-white;
+            margin-bottom: 10px;
+        }
 	}
 
 	.accent {
-	    background-color: $uw-math-dark;
+        $uw-colour-bar-height: 10px;
+        @media (min-width: 768px) {
+            $uw-colour-bar-height: 12px;
+        }
+        @media (min-width: 992px) {
+            $uw-colour-bar-height: 14px;
+        }
+        @media (min-width: 1200px) {
+            $uw-colour-bar-height: 18px;
+        }
+        
+        $uw-colour-bar-offset: 33px;
+        
+        height: $uw-colour-bar-height;
+	    background-color: $uw-white;
+        
+        div {
+            width: 25%;
+            height: $uw-colour-bar-height / 2;
+            display: inline-block;
+            position: absolute;
+            top: $uw-colour-bar-offset + ($uw-colour-bar-height / 2);
+        }
+        
+        div:first-of-type {
+            background-color: $uw-grey-l4;
+            width: 100%;
+            top: $uw-colour-bar-offset;
+        }
+        
+        div:nth-of-type(2) {
+            background-color: $uw-math-l1;
+        }
+        
+        div:nth-of-type(3) {
+            left: 25%;
+            background-color: $uw-math-l2;
+        }
+        
+        div:nth-of-type(4) {
+            left: 50%;
+            background-color: $uw-math-l3;
+        }
+        
+        div:nth-of-type(5) {
+            left: 75%;
+            background-color: $uw-math-l4;
+        }
 	}
 
 	h3 {
 	    font-size: 30px;
 	    font-weight: 100;
 	}
+}
+
+// Duke of Edinburgh
+$dofe-red: #ee2651;
+$dofe-yellow: #ffd820;
+$dofe-blue: #00aeef;
+$dofe-green: #82c55b;
+$dofe-purple: #8c5ba6;
+#duke-of-ed {
+    .accent {
+        line-height: 0;
+        
+        div {
+            width: 20%;
+            height: inherit;
+            display: inline-block;
+            position: absolute;
+        }
+        
+        div:first-of-type {
+            background-color: $dofe-red;
+        }
+        
+        div:nth-of-type(2) {
+            background-color: $dofe-yellow;
+            left: 20%;
+        }
+        
+        div:nth-of-type(3) {
+            background-color: $dofe-blue;
+            left: 40%;
+        }
+        
+        div:nth-of-type(4) {
+            background-color: $dofe-green;
+            left: 60%;
+        }
+        
+        div:last-of-type {
+            background-color: $dofe-purple;
+            right: 0;
+        }
+    }
+    
+    .card-header {
+        background-color: white;
+    }
 }
 
 // Hack the North
