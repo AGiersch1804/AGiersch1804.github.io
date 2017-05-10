@@ -1,5 +1,9 @@
 $primary: orange;
 
+$bootstrap-sm-width: 768px;
+$bootstrap-md-width: 992px;
+$bootstrap-lg-width: 1200px;
+
 @mixin box-shadow($x, $y, $blur, $colour) {
 	box-shadow: $x $y $blur $colour;
 		-ms-box-shadow: $x $y $blur $colour;
@@ -144,9 +148,6 @@ $sj-green-dark: #01573E;
 $sj-gold-dark: #8D590B;
 $sj-green-light: #92B7AC;
 $sj-gold-light: #C88A11;
-#school-logo {
-    margin-bottom: 20px;
-}
 #school {
     .card-header {
         background-color: $uw-gold-l3;
@@ -167,13 +168,13 @@ $sj-gold-light: #C88A11;
 
 	.accent {
         $uw-colour-bar-height: 10px;
-        @media (min-width: 768px) {
+        @media (min-width: $bootstrap-sm-width) {
             $uw-colour-bar-height: 12px;
         }
-        @media (min-width: 992px) {
+        @media (min-width: $bootstrap-md-width) {
             $uw-colour-bar-height: 14px;
         }
-        @media (min-width: 1200px) {
+        @media (min-width: $bootstrap-lg-width) {
             $uw-colour-bar-height: 18px;
         }
         
@@ -266,6 +267,24 @@ $dofe-purple: #8c5ba6;
     
     .card-header {
         background-color: white;
+        padding: 8px 12px 20px 12px;
+    }
+    
+    .card-contents {
+        padding-top: 0;
+        
+        .banner {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: $dofe-green;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .banner:first-of-type {
+            margin-top: 0;
+            background-color: $dofe-blue;
+        }
     }
 }
 

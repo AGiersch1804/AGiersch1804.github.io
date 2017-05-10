@@ -85,9 +85,6 @@ body {
   background-color: #CCFFFF;
   border: 1px solid #3385FF; }
 
-#school-logo {
-  margin-bottom: 20px; }
-
 #school .card-header {
   background-color: #FFD54F;
   padding: 8px; }
@@ -149,7 +146,19 @@ body {
     background-color: #8c5ba6;
     right: 0; }
 #duke-of-ed .card-header {
-  background-color: white; }
+  background-color: white;
+  padding: 8px 12px 20px 12px; }
+#duke-of-ed .card-contents {
+  padding-top: 0; }
+  #duke-of-ed .card-contents .banner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #82c55b;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  #duke-of-ed .card-contents .banner:first-of-type {
+    margin-top: 0;
+    background-color: #00aeef; }
 
 #htn .card-header {
   padding: 10px 0 10px 0;
